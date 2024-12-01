@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag & Drop Puzzle CAPTCHA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="puzzle-container">
+        <h2>Complete the puzzle to verify you're human</h2>
+        <div class="puzzle-grid">
+            <div class="puzzle-piece" id="piece-1" draggable="true"></div>
+            <div class="puzzle-piece" id="piece-2" draggable="true"></div>
+            <div class="puzzle-piece" id="piece-3" draggable="true"></div>
+            <div class="puzzle-piece" id="piece-4" draggable="true"></div>
+        </div>
+        <div class="controls">
+            <button id="refresh-btn">Refresh</button>
+            <button id="verify-btn">Verify</button>
+        </div>
+        <p id="message"></p>
+    </div>
+
+    <!-- Include screenInfo.js -->
+    <script src="screenInfo.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
